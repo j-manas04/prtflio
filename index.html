@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Manas Jha — Web Developer</title>
+  <link rel="stylesheet" href="style.css">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,300;0,700;0,900;1,300;1,700&family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap"
+    rel="stylesheet">
+
+</head>
+
+<body>
+
+  <!-- CURSOR -->
+  <div class="cursor" id="cur"></div>
+  <div class="cursor-ring" id="ring"></div>
+
+  <!-- BACK TO TOP -->
+  <!-- <button class="back-to-top" id="backToTop" aria-label="Back to top">↑</button> -->
+  <!-- BACK TO TOP -->
+  <button class="back-to-top" id="backToTop" aria-label="Back to top"
+    onclick="window.scrollTo({top:0,behavior:'smooth'})">
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+      stroke-linecap="round" stroke-linejoin="round">
+      <polyline points="18 15 12 9 6 15"></polyline>
+    </svg>
+  </button>
+
+  <!-- MOBILE MENU -->
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#hero" class="m-nav-link">Home</a>
+    <a href="#about" class="m-nav-link">About</a>
+    <a href="#services" class="m-nav-link">Services</a>
+    <a href="#projects" class="m-nav-link">Projects</a>
+    <a href="#contact" class="m-nav-link">Contact</a>
+    <a href="https://github.com/j-manas04" class="m-github" target="_blank">Visit GitHub ↗</a>
+  </div>
+
+  <!-- NAV -->
+  <nav>
+    <a href="#hero" class="nav-logo">
+      Manas J.
+      <span class="logo-dot"></span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <a href="https://github.com/j-manas04" class="nav-cta" target="_blank">Visit GitHub ↗</a>
+    <button class="nav-hamburger" id="hamburger" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- HERO -->
+  <section id="hero">
+    <div class="hero-bg-text">MJ</div>
+    <div class="hero-left">
+      <div class="hero-eyebrow">
+        <span class="hero-line"></span>
+        Frontend & Backend Developer
+      </div>
+      <h1 class="hero-name">Manas<br><em>Jha.</em></h1><br>
+      <p class="hero-role">Web Developer — Building for the Web</p>
+      <p class="hero-desc">Frontend developer crafting responsive and engaging web experiences with clean code and
+        thoughtful design. I turn ideas into polished digital products.</p>
+      <div class="hero-actions">
+        <a href="Manas__ATS_Resume .pdf" class="btn-main" target="_blank">Download CV ↓</a>
+        <a href="#contact" class="btn-sec">Contact</a>
+      </div>
+      <div class="hero-socials">
+        <a href="linkedin.com/in/J-manas04" class="s-link">in</a>
+        <a href="https://github.com/j-manas04" class="s-link">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+            <path
+              d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" />
+          </svg>
+        </a>
+        <a href="mailto:manasjha04@gmail.com" class="s-link">✉</a>
+      </div>
+    </div>
+    <div class="hero-right">
+      <div class="hero-img-wrap">
+        <img src="profile-pic.PNG" alt="Manas Jha">
+        <div class="hero-tag">
+          <span class="tag-dot"></span>
+          <div>
+            <div class="tag-text">Available for Work</div>
+            <div class="tag-sub">Freelance & Full-time</div>
+          </div>
+        </div>
+        <div class="hero-number">
+          2+
+          <span>Projects</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MARQUEE -->
+  <div class="marquee-section">
+    <div class="marquee-track">
+      <span class="marquee-item">HTML5</span><span class="marquee-dot">✦</span>
+      <span class="marquee-item">CSS3</span><span class="marquee-dot">✦</span>
+      <span class="marquee-item">JavaScript</span><span class="marquee-dot">✦</span>
+      <span class="marquee-item">PHP</span><span class="marquee-dot">✦</span>
+      <span class="marquee-item">Laravel</span><span class="marquee-dot">✦</span>
+      <span class="marquee-item">MySQL</span><span class="marquee-dot">✦</span>
+      <span class="marquee-item">UI/UX Design</span><span class="marquee-dot">✦</span>
+      <span class="marquee-item">Responsive Design</span><span class="marquee-dot">✦</span>
+      <span class="marquee-item">Git & GitHub</span><span class="marquee-dot">✦</span>
+      <span class="marquee-item">HTML5</span><span class="marquee-dot">✦</span>
+      <span class="marquee-item">CSS3</span><span class="marquee-dot">✦</span>
+      <span class="marquee-item">JavaScript</span><span class="marquee-dot">✦</span>
+      <span class="marquee-item">PHP</span><span class="marquee-dot">✦</span>
+      <span class="marquee-item">Laravel</span><span class="marquee-dot">✦</span>
+      <span class="marquee-item">MySQL</span><span class="marquee-dot">✦</span>
+      <span class="marquee-item">UI/UX Design</span><span class="marquee-dot">✦</span>
+      <span class="marquee-item">Responsive Design</span><span class="marquee-dot">✦</span>
+      <span class="marquee-item">Git & GitHub</span><span class="marquee-dot">✦</span>
+    </div>
+  </div>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="s-inner">
+      <div class="s-tag reveal">About Me</div>
+      <h2 class="s-title reveal">Passionate about<br>great <em>software.</em></h2>
+      <div class="about-grid">
+        <div class="about-left reveal">
+          <p>I am a passionate web developer with expertise in frontend technologies such as HTML, CSS, and JavaScript.
+            I enjoy creating responsive and user-friendly websites that provide an excellent user experience.</p>
+          <p>Beyond code, I care about aesthetics and usability — I believe great software is software that feels
+            invisible because it works so well.</p>
+          <div class="about-skills">
+            <span class="skill-tag">HTML5</span>
+            <span class="skill-tag">CSS3</span>
+            <span class="skill-tag">JavaScript</span>
+            <span class="skill-tag">PHP</span>
+            <span class="skill-tag">Laravel</span>
+            <span class="skill-tag">MySQL</span>
+            <span class="skill-tag">Java</span>
+            <span class="skill-tag">Spring Boot</span>
+            <span class="skill-tag">GitHub</span>
+            <span class="skill-tag">Responsive Design</span>
+
+          </div>
+        </div>
+        <div class="about-right reveal reveal-d1">
+          <div class="stat-box"><span class="stat-n">1<em>+</em></span><span class="stat-l">Years Experience</span>
+          </div>
+          <div class="stat-box"><span class="stat-n">2<em>+</em></span><span class="stat-l">Projects Built</span></div>
+          <div class="stat-box"><span class="stat-n">5<em>+</em></span><span class="stat-l">Happy Clients</span></div>
+          <div class="stat-box"><span class="stat-n">3<em>+</em></span><span class="stat-l">Core Technologies</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section id="services">
+    <div class="s-inner">
+      <div class="services-header">
+        <div>
+          <div class="s-tag reveal">Services</div>
+          <h2 class="s-title reveal">What I <em>do</em><br>for you.</h2>
+        </div>
+        <p class="reveal"
+          style="color:var(--muted);max-width:280px;font-size:0.9rem;line-height:1.7;align-self:flex-end;">Every project
+          is treated with care, precision, and a commitment to quality that shows in the final result.</p>
+      </div>
+      <div class="services-grid">
+        <div class="srv-card reveal">
+          <div class="srv-content">
+            <span class="srv-num">01</span>
+            <span class="srv-icon">◈</span>
+            <div class="srv-name">UI/UX Design</div>
+            <p class="srv-desc">Creating visually appealing and user-friendly interfaces for websites and applications —
+              from wireframe to polished, pixel-perfect screens.</p>
+          </div>
+        </div>
+        <div class="srv-card reveal reveal-d1">
+          <div class="srv-content">
+            <span class="srv-num">02</span>
+            <span class="srv-icon">&lt;/&gt;</span>
+            <div class="srv-name">Frontend Development</div>
+            <p class="srv-desc">Building responsive and dynamic websites using modern web technologies — clean, semantic
+              code that works beautifully across all devices.</p>
+          </div>
+        </div>
+        <div class="srv-card reveal reveal-d2">
+          <div class="srv-content">
+            <span class="srv-num">03</span>
+            <span class="srv-icon">⚙</span>
+            <div class="srv-name">Backend Development</div>
+            <p class="srv-desc">Developing robust and scalable backend systems using PHP and Laravel — secure APIs,
+              efficient databases, and reliable server architecture.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects">
+    <div class="s-inner">
+      <div class="projects-header">
+        <div>
+          <div class="s-tag reveal">Projects</div>
+          <h2 class="s-title reveal">Things I've <em>built.</em></h2>
+        </div>
+        <a href="https://github.com/j-manas04" class="view-all reveal" target="_blank">View all on GitHub ↗</a>
+      </div>
+      <div class="projects-grid">
+        <div class="proj-card proj-featured reveal">
+          <div class="proj-thumb">
+            <div class="proj-thumb-inner">P1</div>
+            <div class="proj-thumb-overlay"></div>
+          </div>
+          <div class="proj-body">
+            <div class="proj-tags"><span class="p-tag">Featured</span><span class="p-tag">HTML/CSS</span><span
+                class="p-tag">JavaScript</span></div>
+            <div class="proj-name">Portfolio Website</div>
+            <p class="proj-desc">A fully responsive personal portfolio site showcasing skills, services, and projects
+              with smooth animations and a clean design system.</p>
+            <a href="#" class="proj-link">View Project →</a>
+          </div>
+        </div>
+        <div class="proj-card reveal">
+          <div class="proj-thumb">
+            <div class="proj-thumb-inner">P2</div>
+            <div class="proj-thumb-overlay"></div>
+          </div>
+          <div class="proj-body">
+            <div class="proj-tags"><span class="p-tag">PHP</span><span class="p-tag">MySQL</span></div>
+            <div class="proj-name">E-Commerce Platform</div>
+            <p class="proj-desc">A full-stack shopping platform with product management, cart, and checkout built with
+              PHP and MySQL.</p>
+            <a href="#" class="proj-link">View Project →</a>
+          </div>
+        </div>
+        <div class="proj-card reveal reveal-d1">
+          <div class="proj-thumb">
+            <div class="proj-thumb-inner">P3</div>
+            <div class="proj-thumb-overlay"></div>
+          </div>
+          <div class="proj-body">
+            <div class="proj-tags"><span class="p-tag">Laravel</span><span class="p-tag">API</span></div>
+            <div class="proj-name">Task Manager App</div>
+            <p class="proj-desc">A project management tool with team collaboration, task tracking, and real-time
+              updates.</p>
+            <a href="#" class="proj-link">View Project →</a>
+          </div>
+        </div>
+        <div class="proj-card reveal reveal-d2">
+          <div class="proj-thumb">
+            <div class="proj-thumb-inner">P4</div>
+            <div class="proj-thumb-overlay"></div>
+          </div>
+          <div class="proj-body">
+            <div class="proj-tags"><span class="p-tag">Figma</span><span class="p-tag">UI/UX</span></div>
+            <div class="proj-name">UI Design System</div>
+            <p class="proj-desc">A comprehensive component library with reusable elements, tokens, and documentation for
+              a SaaS product.</p>
+            <a href="#" class="proj-link">View Project →</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <div class="s-inner">
+      <div class="s-tag reveal">Get In Touch</div>
+      <div class="contact-grid">
+        <div class="contact-left reveal">
+          <h2 class="s-title">Let's build<br>something <em>great.</em></h2>
+          <p class="contact-tagline">Have a project in mind or just want to say hello? I'd love to hear from you. I'll
+            get back to you within 24 hours.</p>
+          <a href="mailto:manasjha04@gmail.com" class="contact-email">✉ manasjha2574@gmail.com</a>
+          <div class="contact-socials">
+            <a href="https://www.linkedin.com/in/j-manas04/" class="c-social">in</a>
+            <a href="https://github.com/j-manas04" class="c-social">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" />
+              </svg>
+            </a>
+          </div>
+        </div>
+        
+        <form class="contact-form reveal reveal-d1" onsubmit="return false;" action="https://api.web3forms.com/submit"
+          method="POST">
+          <input type="hidden" name="access_key" value="3258a866-8443-4852-90bf-a73f593cc967">
+
+          <div class="f-row">
+            <div class="f-group"><label>Your Name</label><input type="text" placeholder="Manas Jha"></div>
+            <div class="f-group"><label>Email Address</label><input type="email" placeholder="manas@email.com"></div>
+          </div>
+          <div class="f-group"><label>Subject</label><input type="text" placeholder="Project inquiry..."></div>
+          <div class="f-group"><label>Message</label><textarea
+              placeholder="Tell me about your project, timeline, and budget..."></textarea></div>
+          <button class="btn-send" type="submit">Send Message →</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- FEEDBACK BUTTON STRIP -->
+  <div class="feedback-strip">
+    <div class="feedback-strip-inner">
+      <div class="feedback-strip-left">
+        <span class="feedback-strip-label">Got feedback?</span>
+        <span class="feedback-strip-sub">Share your thoughts on my portfolio — it only takes a minute.</span>
+      </div>
+      <a href="feedback.html" class="feedback-strip-btn">
+        <span>Leave Feedback</span>
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+          stroke-linecap="round" stroke-linejoin="round">
+          <line x1="5" y1="12" x2="19" y2="12" />
+          <polyline points="12 5 19 12 12 19" />
+        </svg>
+      </a>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-logo">Manas J.</div>
+    <div class="footer-text">© 2026 Manas Jha — All rights reserved.</div>
+    <!-- <div class="footer-links">
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </div> -->
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
