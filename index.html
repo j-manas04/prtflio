@@ -295,18 +295,16 @@
             </a>
           </div>
         </div>
-        
-        <form class="contact-form reveal reveal-d1" onsubmit="return false;" action="https://api.web3forms.com/submit"
-          method="POST">
-          <input type="hidden" name="access_key" value="3258a866-8443-4852-90bf-a73f593cc967">
 
+        <form class="contact-form reveal reveal-d1" onsubmit="return action;" id="contactform" method="POST">
+         
           <div class="f-row">
-            <div class="f-group"><label>Your Name</label><input type="text" placeholder="Manas Jha"></div>
-            <div class="f-group"><label>Email Address</label><input type="email" placeholder="manas@email.com"></div>
+            <div class="f-group"><label>Your Name</label><input type="text" placeholder="Manas Jha" required></div>
+            <div class="f-group"><label>Email Address</label><input type="email" placeholder="manas@email.com" required></div>
           </div>
-          <div class="f-group"><label>Subject</label><input type="text" placeholder="Project inquiry..."></div>
+          <div class="f-group"><label>Subject</label><input type="text" placeholder="Project inquiry..." required></div>
           <div class="f-group"><label>Message</label><textarea
-              placeholder="Tell me about your project, timeline, and budget..."></textarea></div>
+              placeholder="Tell me about your project, timeline, and budget..." required></textarea></div>
           <button class="btn-send" type="submit">Send Message →</button>
         </form>
       </div>
@@ -345,6 +343,7 @@
   </footer>
 
   <script src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
 </body>
 
 </html>

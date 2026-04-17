@@ -60,3 +60,22 @@ const sectionObserver = new IntersectionObserver(entries => {
     });
 }, { threshold: 0.4 });
 sections.forEach(s => sectionObserver.observe(s));
+
+//emailjs initialization
+(function(){
+  emailjs.init("VdDspB8txv8Ky8okE"); // paste here
+})();
+
+document.getElementById("contact-form").addEventListener("submit", function(e){
+  e.preventDefault();
+
+  emailjs.sendForm(
+    "service_9p25lp2",
+    "template_gysp2i9",
+    this
+  ).then(function(){
+      alert("Message Sent Successfully ✅");
+  }, function(error){
+      alert("Failed ❌ " + JSON.stringify(error));
+  });
+});
