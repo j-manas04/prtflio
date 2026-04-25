@@ -18,6 +18,18 @@
     --border: rgba(13, 13, 18, 0.1);
 }
 
+.dark-theme {
+    --ink: #f5f3ef;
+    --ink2: #eceae4;
+    --paper: #0d0e12;
+    --paper2: #16171d;
+    --accent: #ff4d2e;
+    --accent2: #1a1aff;
+    --gold: #c9a84c;
+    --muted: #a0a0a0;
+    --border: rgba(245, 243, 239, 0.1);
+}
+
 html {
     scroll-behavior: smooth;
 }
@@ -29,6 +41,7 @@ body {
     font-weight: 400;
     overflow-x: hidden;
     cursor: none;
+    transition: background 0.35s ease, color 0.35s ease;
 }
 
 /* CURSOR */
@@ -958,160 +971,120 @@ section {
 
 /* CONTACT */
 #contact {
-    background: var(--ink);
+    /* Always dark, regardless of site theme — matches the reference */
+    background: #0d0e12;
+    padding: 8rem 4rem;
 }
 
-#contact .s-tag {
-    color: var(--gold);
-}
-
-#contact .s-tag::before {
-    background: var(--gold);
-}
-
-.contact-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 5rem;
-    align-items: start;
-    margin-top: 4rem;
-}
-
-.contact-left .s-title {
-    color: var(--paper);
-    font-size: clamp(2rem, 4vw, 3.5rem);
-}
-
-.contact-left .s-title em {
-    color: var(--gold);
-}
-
-.contact-tagline {
-    color: rgba(245, 243, 239, 0.5);
-    font-size: 1rem;
-    line-height: 1.75;
-    margin-top: 1.5rem;
-    max-width: 380px;
-}
-
-.contact-email {
-    margin-top: 2.5rem;
-    display: inline-flex;
+.contact-center {
+    display: flex;
+    flex-direction: column;
     align-items: center;
-    gap: 0.5rem;
+    text-align: center;
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+/* Small "04 — CONTACT" label */
+.contact-tag {
+    font-size: 0.75rem;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--gold);
+    font-weight: 600;
+    margin-bottom: 2.5rem;
+}
+
+/* Massive heading */
+.contact-h2 {
+    font-family: 'Fraunces', serif;
+    font-weight: 900;
+    font-size: clamp(3.5rem, 8vw, 7rem);
+    line-height: 0.92;
+    letter-spacing: -0.04em;
+    color: #f5f3ef;
+    margin-bottom: 2.5rem;
+}
+
+/* 'great' — outlined italic using your gold variable */
+.outline-text {
+    font-style: italic;
+    color: transparent;
+    -webkit-text-stroke: 2px var(--gold);
+}
+
+/* Subtitle paragraph */
+.contact-p {
+    font-size: 1rem;
+    color: rgba(245, 243, 239, 0.5);
+    line-height: 1.8;
+    margin-bottom: 4rem;
+    font-family: 'Plus Jakarta Sans', monospace;
+    letter-spacing: 0.02em;
+}
+
+/* Large email link with thick gold underline */
+.contact-email-large {
     font-family: 'Fraunces', serif;
     font-weight: 700;
-    font-size: 1.1rem;
-    color: var(--paper);
+    font-size: clamp(1.6rem, 3.5vw, 2.5rem);
+    color: #f5f3ef;
     text-decoration: none;
-    border-bottom: 1px solid rgba(245, 243, 239, 0.15);
-    padding-bottom: 0.5rem;
-    transition: border-color 0.2s, color 0.2s;
+    border-bottom: 3px solid var(--gold);
+    padding-bottom: 6px;
+    display: inline-block;
+    margin-bottom: 6rem;
+    transition: color 0.25s, border-color 0.25s;
+    letter-spacing: -0.02em;
 }
 
-.contact-email:hover {
-    border-color: var(--gold);
+.contact-email-large:hover {
+    color: var(--gold);
+    border-color: rgba(245, 243, 239, 0.3);
+}
+
+/* Horizontal social links with slash separators */
+.contact-socials-inline {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.contact-socials-inline a {
+    font-size: 0.72rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: rgba(245, 243, 239, 0.45);
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.contact-socials-inline a:hover {
     color: var(--gold);
 }
 
-.contact-socials {
-    display: flex;
-    gap: 0.75rem;
-    margin-top: 2rem;
+.contact-socials-inline .sep {
+    color: rgba(245, 243, 239, 0.2);
+    font-size: 0.8rem;
 }
 
-.c-social {
-    width: 42px;
-    height: 42px;
-    border-radius: 50%;
-    border: 1px solid rgba(245, 243, 239, 0.12);
+/* THEME TOGGLE BUTTON */
+.theme-toggle {
+    background: none;
+    border: none;
+    color: var(--ink);
+    cursor: pointer;
     display: grid;
     place-items: center;
-    color: rgba(245, 243, 239, 0.5);
-    text-decoration: none;
-    font-size: 0.82rem;
-    font-weight: 700;
-    transition: all 0.2s;
+    padding: 0.5rem;
+    transition: color 0.2s;
 }
 
-.c-social:hover {
-    border-color: var(--gold);
-    color: var(--gold);
-}
-
-.contact-form {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-}
-
-.f-row {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 1rem;
-}
-
-.f-group {
-    display: flex;
-    flex-direction: column;
-    gap: 0.4rem;
-}
-
-label {
-    font-size: 0.75rem;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-    color: rgba(245, 243, 239, 0.35);
-    font-weight: 500;
-}
-
-input,
-textarea {
-    background: rgba(245, 243, 239, 0.05);
-    border: 1px solid rgba(245, 243, 239, 0.1);
-    border-radius: 12px;
-    padding: 0.85rem 1rem;
-    color: var(--paper);
-    font-family: 'Plus Jakarta Sans', sans-serif;
-    font-size: 0.9rem;
-    outline: none;
-    resize: none;
-    transition: border-color 0.2s, background 0.2s;
-}
-
-input::placeholder,
-textarea::placeholder {
-    color: rgba(245, 243, 239, 0.25);
-}
-
-input:focus,
-textarea:focus {
-    border-color: var(--gold);
-    background: rgba(245, 243, 239, 0.08);
-}
-
-textarea {
-    min-height: 130px;
-}
-
-.btn-send {
-    background: var(--gold);
-    color: var(--ink);
-    font-family: 'Plus Jakarta Sans', sans-serif;
-    font-weight: 700;
-    font-size: 0.88rem;
-    letter-spacing: 0.05em;
-    padding: 1rem 2rem;
-    border-radius: 100px;
-    border: none;
-    cursor: pointer;
-    transition: opacity 0.2s, transform 0.2s;
-    align-self: flex-start;
-}
-
-.btn-send:hover {
-    opacity: 0.85;
-    transform: translateY(-2px);
+.theme-toggle:hover {
+    color: var(--accent);
 }
 
 /* FEEDBACK STRIP */
