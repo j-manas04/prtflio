@@ -265,7 +265,7 @@ nav {
     font-size: 28vw;
     line-height: 1;
     color: transparent;
-    -webkit-text-stroke: 1px rgba(13, 13, 18, 0.05);
+    -webkit-text-stroke: 1px rgba(13, 13, 18, 0.18);
     bottom: -2vw;
     left: -1vw;
     pointer-events: none;
@@ -974,6 +974,17 @@ section {
     /* Always dark, regardless of site theme — matches the reference */
     background: #0d0e12;
     padding: 8rem 4rem;
+}
+
+/* Force the s-tag label to gold on the dark contact section */
+#contact .s-tag {
+    color: var(--gold);
+    justify-content: center;
+    margin-bottom: 2.5rem;
+}
+
+#contact .s-tag::before {
+    background: var(--gold);
 }
 
 .contact-center {
